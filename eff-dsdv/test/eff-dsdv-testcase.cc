@@ -33,7 +33,7 @@
 #include "ns3/simulator.h"
 #include "ns3/mobility-helper.h"
 #include "ns3/nqos-wifi-mac-helper.h"
-#include "ns3/dsdv-helper.h"
+#include "ns3/eff-dsdv-helper.h"
 #include "ns3/double.h"
 #include "ns3/uinteger.h"
 #include "ns3/v4ping-helper.h"
@@ -43,15 +43,15 @@
 #include "ns3/pcap-file.h"
 #include "ns3/internet-stack-helper.h"
 #include "ns3/ipv4-address-helper.h"
-#include "ns3/dsdv-packet.h"
-#include "ns3/dsdv-rtable.h"
+#include "ns3/eff-dsdv-packet.h"
+#include "ns3/eff-dsdv-rtable.h"
 
 namespace ns3 {
-class DsdvHeaderTestCase : public TestCase
+class EffDsdvHeaderTestCase : public TestCase
 {
 public:
-  DsdvHeaderTestCase ();
-  ~DsdvHeaderTestCase ();
+  EffDsdvHeaderTestCase ();
+  ~EffDsdvHeaderTestCase ();
   virtual void
   DoRun (void);
 };
